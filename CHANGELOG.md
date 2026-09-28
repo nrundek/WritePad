@@ -1,5 +1,42 @@
 # Changelog
 
+## Writepad [2.8.1] - 2026-09-25
+
+- Save / Save As now list plain text (TXT) first and use it as the default for new documents (previously DOCX); opened TXT, DOCX, MD and RTF documents are still saved in the format they were opened in.
+- Renamed Review > "Word wrap while writing" to "Word wrap" ("Prijelom riječi" / "Prelamanje reči"), including Help and spoken announcements.
+- Word wrap page view is consistent across the whole document: the page being edited now lays out lines on the same device as pagination, and the other pages are drawn by the editor itself, so fonts, line spacing and margins match on every page at any zoom, in Dark mode and in the Dyslexia-friendly display.
+- The page being edited no longer hides its last line when enlarged text is taller than the page layout.
+- Framed the Decrease font, Increase font, Dark mode and Dyslexia-friendly display buttons.
+- Framed the status-bar entries (page, counts, writing goal) and drew them in the text colour so they stay readable in Dark mode.
+- Fixed a garbled dash in the document switcher list.
+- Updated application, installer and help to 2.8.1.
+
+## Writepad [2.8] - 2026-09-24
+
+- With word wrap off, the document is shown as a continuous Word-style sheet with side margins; lines flow to the window width, so no text is hidden past the right edge.
+- With word wrap on, the A4 line width now follows the zoom, so the left and right 2.5 cm margins are equal at every font size.
+- Increase / Decrease font now change the displayed size by one point, from 12 to 34 points, and announce when the smallest or largest size is reached.
+- Inactive pages are rendered at on-screen size, so enlarged text stays sharp, and an enlarged page scrolls horizontally to keep the caret in view.
+- The workspace around the A4 page keeps its own colour, as in Word.
+- Updated application, installer and help to 2.8.
+
+## Writepad [2.7.3] - 2026-09-24
+
+- Added Help > Official website, opening https://tiflolab.eu in the default web browser.
+
+- Removed File > Export and added PDF and HTML to Save / Save As alongside TXT, DOCX, Markdown and RTF.
+- Added Ctrl+Shift+F for Font and size.
+- Updated application, installer and help to 2.7.3.
+
+## Writepad [2.7.2] - 2026-09-23
+
+- Made every main-menu command available in the right-click menu with synchronized labels, availability and check states.
+
+- Fixed unwrapped document display with a full scrolling editor viewport and native caret scrolling.
+- Removed duplicate active-page bitmap rendering that left glyph fragments beside text.
+- Added synchronized Dark mode and Dyslexia-friendly display buttons next to font controls.
+- Updated application and installer metadata and release artifacts to 2.7.2.
+
 ## Writepad [2.7] - 2026-09-18
 
 - Restored the Word wrap option to the writing area; the read-only HTML preview now remains wrapped independently.
@@ -148,7 +185,7 @@
 ## [1.2.5] - 2026-09-03
 
 - Added Ctrl+M start/end selection with localized visible and spoken on/off announcements in Edit.
-- Moved heading levels 1–6 to Ctrl+1–6 and added Ctrl+Shift+1/2/3 line-or-selection bold, italic and underline commands while retaining Ctrl+B/I/U typing toggles.
+- Moved heading levels 1-6 to Ctrl+1-6 and added Ctrl+Shift+1/2/3 line-or-selection bold, italic and underline commands while retaining Ctrl+B/I/U typing toggles.
 - Moved heading navigation to Ctrl+F1/F2, the heading list to Ctrl+Shift+H, spelling/typography review to Ctrl+F4/F5, and the personal dictionary to Ctrl+F6.
 - Moved the read-only HTML preview switch to Shift+F6 and the Pandoc Markdown guide to Ctrl+Alt+M.
 - Simplified proofreading to one issue and proposed change at a time, announced the number of findings, and exposed Correct, Ignore and Add to dictionary actions in a predictable tab order.
@@ -160,7 +197,7 @@
 ## [1.2.2] - 2026-09-03
 
 - Replaced Ctrl+F4 RTF preview with a read-only WebView2 HTML document in both writing modes, including semantic headings, tables, lists, links, images and footnotes.
-- Added browser-level keyboard return, heading navigation and list, reflow and 50–400% zoom; preview preserves source, selection, formatting and metadata.
+- Added browser-level keyboard return, heading navigation and list, reflow and 50-400% zoom; preview preserves source, selection, formatting and metadata.
 - Verify rendered HTML and actual browser accessibility roles/heading levels; disable document scripts and editing in preview.
 - Added mutually exclusive checked Writing (plain text) and Writing (Pandoc Markdown) menu choices.
 - Default new notebooks to plain writing with the original direct rich-text formatting.
@@ -190,7 +227,7 @@
 
 ### Added
 
-- Basic Markdown writing with headings 1–3, bold, italic, inline/fenced code, literal escapes and an accessible formatted preview.
+- Basic Markdown writing with headings 1-3, bold, italic, inline/fenced code, literal escapes and an accessible formatted preview.
 - Paragraph heading styles, previous/next heading navigation and a heading list, including in preview.
 - Ctrl+F1 through Ctrl+F12 commands, Ctrl+Shift+F1 for body paragraphs, Ctrl+B for bold and Ctrl+I for italics; existing function keys remain available.
 - Offline dictionary checks for Croatian, Serbian Latin/Cyrillic and US English, with suggestions, explicit replacements, skip commands and persistent personal dictionaries.
@@ -264,4 +301,5 @@
 ### Changed
 
 - Updated application, installer, update-check, file metadata, documentation, and release artifact names to version 1.0.4.
-- Added third-party audio attribution and license notices to portable and installed distributions.
+- Added third-party audio attribution and license notices to installed distributions.
+
