@@ -1,5 +1,27 @@
 # Changelog
 
+## Writepad [2.9.5] - 2026-10-03
+
+- Added File > New dictation document: a separate blank page for transcribing a recording, with its own File and Sound menus.
+  - File: Open audio file (Ctrl+Shift+O, MP3 and WAV), Save file (Ctrl+S, TXT) and Close dictation writing (Ctrl+F4), which returns to the main window and offers to save unsaved text.
+  - Sound: Play / pause (Ctrl+Space, both while typing in the text and in the player), Back / Forward 5 seconds (Left / Right arrow while the player has focus), Return to start (Ctrl+Shift+Space) and Switch between text and player (Ctrl+Tab).
+  - Playback is controlled only by you: opening a file and typing never start or pause the recording.
+  - The recording is controlled on its own thread, so typed letters appear without delay and screen readers echo them while the sound plays.
+- Added File > Writing speed: a separate blank page with a File menu (Save file Ctrl+S as TXT, Close measurement Ctrl+F4). Timing starts with the first typed character and stops at two Enters in a row; the total time, characters including spaces and the average speed in characters (keystrokes), words and syllables per minute are then written below the text.
+- Fixed the A4 page view with Windows display scaling (for example 150 %): lines no longer run past the right margin, the page is sized to the real screen DPI, and pages break where the displayed lines reach the bottom of the sheet, so enlarged text (up to 34 points) always fits its page.
+- The installer's completion step no longer offers "Run application"; it shows the completion message and OK.
+- Help and Keyboard shortcuts describe the new windows and their shortcuts; README updated.
+- Updated application, installer and help to 2.9.5.
+## Writepad [2.9] - 2026-10-01
+
+- Increase font / Decrease font (Ctrl++ / Ctrl+-, toolbar buttons A+ / A−) now really change the size of the letters instead of zooming the whole page: the A4 sheet keeps its size and margins, and the text reflows into more or fewer lines and pages, as when the font size is changed in Microsoft Word.
+- The page count, Go to page and the page shown in the status bar follow the reflowed pages; the Dyslexia-friendly display reflows the same way.
+- Font size remains a display preference: printing, PDF and the saved document keep their own font sizes.
+- Added Edit > New page with Ctrl+Enter, as in Microsoft Word. It inserts a page break at the cursor and the text after it starts on a new page. The shortcut works in the writing area only; Enter keeps its usual meaning in dialogs. The right-click Insert > Page break command shows the same shortcut.
+- Help describes the new font behaviour and the Ctrl+Enter shortcut.
+- Added README.md.
+- Updated application, installer and help to 2.9.
+
 ## Writepad [2.8.1] - 2026-09-25
 
 - Save / Save As now list plain text (TXT) first and use it as the default for new documents (previously DOCX); opened TXT, DOCX, MD and RTF documents are still saved in the format they were opened in.
